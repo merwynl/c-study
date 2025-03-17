@@ -1,3 +1,4 @@
+#include "cs50.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -34,15 +35,18 @@ int main(void)
 {
     // int numbers[] = {3, 2, 7, 1, 4, 5, 8, 0, 9, 6};
 
-    int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 30, 50};
-    // int unsorted[] = {3, 2, 7, 1, 20, 5, 8, 9, 50, 10, 15, 4, 30, 6, 0};
+    // int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 30, 50};
+    int numbers[] = {3, 2, 7, 1, 20, 5, 8, 9, 50, 10, 15, 4, 30, 6, 0};
 
     int size =  sizeof(numbers) / sizeof(numbers[0]);
     int target = 10;
 
+    BubbleSort(numbers, size);
+
+
     // SelectionSort(numbers, size);
-    int index = BinarySearch(numbers, 15, 0, 10);
-    printf("Index of target %d = %d\n", target, index);
+    // int index = BinarySearch(numbers, 15, 0, 10);
+    // printf("Index of target %d = %d\n", target, index);
 }
 
 // Querying user number
