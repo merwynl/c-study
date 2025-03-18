@@ -39,12 +39,12 @@ int main(void)
     int numbers[] = {3, 2, 7, 1, 20, 5, 8, 9, 50, 10, 15, 4, 30, 6, 0};
 
     int size =  sizeof(numbers) / sizeof(numbers[0]);
-    int target = 10;
+    // int target = 10;
 
-    BubbleSort(numbers, size);
+    // BubbleSort(numbers, size);
 
 
-    // SelectionSort(numbers, size);
+    SelectionSort(numbers, size);
     // int index = BinarySearch(numbers, 15, 0, 10);
     // printf("Index of target %d = %d\n", target, index);
 }
@@ -188,13 +188,13 @@ int SelectionSort(int array[], int size)
                     {
                         minIndex = j;
                     }
-            // Swaps the array elements if necessary
-            if (minIndex != i)
-            {
-                int temp = array[i];
-                array[i] = array[minIndex];
-                array[minIndex] = temp;
-            }
+                // Swaps the array elements if necessary
+                if (minIndex != i)
+                {
+                    int temp = array[i];
+                    array[i] = array[minIndex];
+                    array[minIndex] = temp;
+                }
         }
     }
     for (int i = 0; i < size; i++)
