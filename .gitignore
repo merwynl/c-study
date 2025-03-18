@@ -1,3 +1,14 @@
+# Intermediate files
+*Testing
+*.ninja
+*.cmake
+*.ninja_deps
+*.ninja_log
+*.ninja_o
+*.ninja_d
+*.ninja_p
+*CMakeFiles
+
 # Compiles binaries
 x64/
 
